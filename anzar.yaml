@@ -3,12 +3,12 @@ apps:
     ci:
       jobs:
         - name: build-deps
-          runtime: node-v1
+          runtime: node-latest
           tshirt: standard
           commands:
             - cp server.js /app/
     cd:
-      runtime: node-v1
+      runtime: node-latest
       tshirt: standard
       port: 3000
       start_commands: 
